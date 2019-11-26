@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7b7d1d7-0e87-49ab-9905-4d9a047b80e5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1TmLAcANTZyuhNFu54am6qJT6uv" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.4.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\img" />
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\img" />
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\img\svg" />
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\sass\layout" />
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\vendors\fontawesome" />
+      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\vendors" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="init:sass" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="init:sass" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.init:sass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7b7d1d7-0e87-49ab-9905-4d9a047b80e5" name="Default Changelist" comment="" />
+      <created>1574060181407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574060181407</updated>
+      <workItem from="1574060182997" duration="12103000" />
+      <workItem from="1574094714804" duration="3009000" />
+      <workItem from="1574132509823" duration="14894000" />
+      <workItem from="1574225103587" duration="10640000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

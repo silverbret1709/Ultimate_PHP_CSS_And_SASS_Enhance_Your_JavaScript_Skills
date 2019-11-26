@@ -1,0 +1,13 @@
+.section-main {
+  background-color: $color-white;
+}
+
+.container-fluid {
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+
+  @include mediaQuery(phone6) {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}

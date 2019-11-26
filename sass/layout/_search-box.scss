@@ -1,0 +1,83 @@
+.search-box {
+  background-color: rgba(54, 24, 25, .5);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  border-radius: 4px;
+  box-shadow: 0 1rem 2rem rgba($color-white, .2);
+  min-height: 20rem;
+  @include mediaQuery(phone6) {
+    top: 45%;
+    min-height: 40rem;
+    width: 100%;
+  }
+  &__input {
+    font-family: $roboto-font;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.8rem;
+    height: 5rem;
+    padding: 1rem 2rem;
+    margin-top: 7rem;
+    color: $linkedln;
+    float: left;
+    border-right: 1px solid $linkedln;
+    width: 50%;
+    @include mediaQuery(phone6) {
+      margin-top: 8rem;
+      width: 100%;
+      height: 6rem;
+    }
+
+  }
+
+  &__input--right {
+    font-family: $roboto-font;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.8rem;
+    height: 5rem;
+    padding: 1rem 2rem;
+    margin-top: 7rem;
+    color: $linkedln;
+    float: right;
+    border: none;
+    border-right: 1px solid $linkedln;
+    width: 50%;
+    @include mediaQuery(phone6) {
+      margin-top: 1.5rem;
+      width: 100%;
+      height: 6rem;
+    }
+  }
+
+  &__btn {
+    background-color: inherit;
+    right: 1rem;
+    height: 3rem;
+    top: 7rem;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    @include mediaQuery(phone6) {
+      background-color: $primary-color-dark;
+      width: 100%;
+      height: 7rem;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--icon {
+      font-size: 3rem !important;
+      color: $linkedln;
+    }
+
+    &--icon:hover {
+      color: $color-tertiary-dark;
+    }
+
+  }
+}

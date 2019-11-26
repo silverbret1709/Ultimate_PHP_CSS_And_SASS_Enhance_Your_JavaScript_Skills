@@ -1,0 +1,22 @@
+@import "abstracts/functions";
+@import "abstracts/helpers";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/animations";
+@import "base/base";
+@import "base/typhography";
+@import "base/utilities";
+
+@import "components/advertisements";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/main-menu";
+@import "layout/search-box";
+
+//@import "themes/";
+//@import "themes/vendors";
+
+@import "pages/home";
