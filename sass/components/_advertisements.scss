@@ -29,8 +29,14 @@
       &-1 {
         background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .85), rgba($secondary-color-dark, .85));
       }
+      &-2 {
+        background-image: linear-gradient(to right bottom, rgba($color-tertiary-very-light, .85), rgba($color-tertiary-very-dark, .85));
+      }
       &-3 {
         background-image: linear-gradient(to right bottom, rgba($profile-color-primary-light, .85), rgba($profile-color-primary-dark, .85));
+      }
+      &-4 {
+        background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
       }
     }
 
@@ -65,17 +71,33 @@
     text-align: center;
   }
 
+  &__heading-jobs {
+    position : absolute;
+    top: 0%;
+    left: 0%;
+    text-align: left;
+    width : 100%;
+  }
+
   &__heading-span {
     padding: 0 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 7rem;
+    max-height: 7rem;
+    display: flex;
 
     &--1 {
       background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .85), rgba($secondary-color-dark, .85));
     }
+    &--2 {
+      background-image: linear-gradient(to right bottom, rgba($color-tertiary-very-light, .85), rgba($color-tertiary-very-dark, .85));
+    }
     &--3 {
       background-image: linear-gradient(to right bottom, rgba($profile-color-primary, .85), rgba($profile-color-primary-dark, .85));
+    }
+
+    &--4 {
+      background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
     }
   }
 
@@ -114,14 +136,16 @@
     }
 
     &--caricons {
-      display: flex;
+      //display: flex;
       margin-right: 1rem;
       .icon_middle {
-        flex: 1;
+        /*flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
+        float: left;
+        margin-left : 2.5rem;
         span {
           margin-top: .3rem;
           text-align: center;
@@ -142,7 +166,19 @@
     margin-top: 3rem;
   }
 
+  &-brief-desc-jobs {
+    position : absolute;
+    top: 35%;
+    left: 5%;
+    height : 17rem;
+    overflow: hidden;
+    padding : .5rem 1rem;
+  }
+
   &-type {
+    //background-color: yellow;
+    text-align : center;
+    width : 100%;
     position: absolute;
     top: 93%;
     left: 50%;
@@ -157,7 +193,43 @@
       padding-right: .6rem;
       font-weight: 700;
     }
+    &--jobtype {
+      font-size : 2.5rem;
+
+    }
   }
+
+  &__salary {
+    width : 100%;
+    position : absolute;
+    top: 80%;
+    font-size : 1.8rem;
+    text-align : center;
+
+  }
+
+  &__company-reviews {
+    margin-top : 1rem;
+    float : left;
+    font-size : 1.6rem;
+    color: $color-black;
+  }
+
+  &__apply-link {
+    font-size : 2rem;
+    text-align : center;
+    width : 100%;
+  }
+
+  &__days_posted {
+    font-size : 1.2rem;
+    color: $color-iconek;
+    text-align : center;
+    margin-left : 1rem;
+    margin-top : 1rem;
+  }
+
+
 
   &__address {
     position: absolute;
@@ -177,6 +249,28 @@
     }
 
 
+  }
+
+  &__hiring-company-name {
+    color: $color-black;
+    font-weight : bold;
+    position : absolute;
+    top: 22%;
+    left: 5%;
+    text-decoration : underline;
+  }
+
+  &__hiring-jobclassifcation {
+    color: $color-black;
+    font-size : 1.2rem;
+    position : absolute;
+    top: 15%;
+    left: 5%;
+
+    span {
+      font-weight : bold;
+      font-size : 1.3rem;
+    }
   }
 
   //Styling backside of the card
@@ -241,6 +335,10 @@
     height: 7rem;
   }
 
+  &__picture-box {
+    //background-color : yellow;
+  }
+
   &__price-value {
     font-size: 3rem;
     float: left;
@@ -261,7 +359,7 @@
     width: 100%;
     position: absolute;
     top: 95%;
-    -photo {
+    &-photo {
       height: 3rem;
       width: 100%;
     }

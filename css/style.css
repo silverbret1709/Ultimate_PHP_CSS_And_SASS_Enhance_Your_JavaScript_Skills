@@ -107,6 +107,19 @@ body {
       .primary-heading--sup {
         font-weight: 400; } }
 
+.secondary-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #89c2f7, #00213f);
+  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: .1rem; }
+
 .col-md-3 {
   height: 60rem;
   perspective: 150rem;
@@ -131,8 +144,12 @@ body {
     transform: rotateY(180deg); }
     .advertisement__side--back-1 {
       background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(245, 107, 38, 0.85)); }
+    .advertisement__side--back-2 {
+      background-image: linear-gradient(to right bottom, rgba(137, 194, 247, 0.85), rgba(0, 33, 63, 0.85)); }
     .advertisement__side--back-3 {
       background-image: linear-gradient(to right bottom, rgba(255, 51, 102, 0.85), rgba(138, 38, 93, 0.85)); }
+    .advertisement__side--back-4 {
+      background-image: linear-gradient(to right bottom, rgba(98, 255, 66, 0.85), rgba(0, 139, 46, 0.85)); }
 
 .advertisement:hover .advertisement__side--front {
   transform: rotateY(-180deg); }
@@ -157,15 +174,27 @@ body {
   left: 0;
   text-align: center; }
 
+.advertisement__heading-jobs {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: left;
+  width: 100%; }
+
 .advertisement__heading-span {
   padding: 0 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 7rem; }
+  max-height: 7rem;
+  display: flex; }
   .advertisement__heading-span--1 {
     background-image: linear-gradient(to right bottom, rgba(250, 216, 132, 0.85), rgba(245, 107, 38, 0.85)); }
+  .advertisement__heading-span--2 {
+    background-image: linear-gradient(to right bottom, rgba(137, 194, 247, 0.85), rgba(0, 33, 63, 0.85)); }
   .advertisement__heading-span--3 {
     background-image: linear-gradient(to right bottom, rgba(235, 47, 100, 0.85), rgba(138, 38, 93, 0.85)); }
+  .advertisement__heading-span--4 {
+    background-image: linear-gradient(to right bottom, rgba(98, 255, 66, 0.85), rgba(0, 139, 46, 0.85)); }
 
 .advertisement__specific-details {
   padding: 2rem;
@@ -192,14 +221,15 @@ body {
   .advertisement-svgicons svg:not(:first-child) {
     margin-right: 1rem; }
   .advertisement-svgicons--caricons {
-    display: flex;
     margin-right: 1rem; }
     .advertisement-svgicons--caricons .icon_middle {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      /*flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
+      float: left;
+      margin-left: 2.5rem; }
       .advertisement-svgicons--caricons .icon_middle span {
         margin-top: .3rem;
         text-align: center;
@@ -214,7 +244,17 @@ body {
   color: #000;
   margin-top: 3rem; }
 
+.advertisement-brief-desc-jobs {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  height: 17rem;
+  overflow: hidden;
+  padding: .5rem 1rem; }
+
 .advertisement-type {
+  text-align: center;
+  width: 100%;
   position: absolute;
   top: 93%;
   left: 50%;
@@ -227,6 +267,33 @@ body {
     color: #f56b26;
     padding-right: .6rem;
     font-weight: 700; }
+  .advertisement-type--jobtype {
+    font-size: 2.5rem; }
+
+.advertisement__salary {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  font-size: 1.8rem;
+  text-align: center; }
+
+.advertisement__company-reviews {
+  margin-top: 1rem;
+  float: left;
+  font-size: 1.6rem;
+  color: #000; }
+
+.advertisement__apply-link {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%; }
+
+.advertisement__days_posted {
+  font-size: 1.2rem;
+  color: #231f20;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 1rem; }
 
 .advertisement__address {
   position: absolute;
@@ -240,6 +307,24 @@ body {
   .advertisement__address span {
     font-size: 1.1rem;
     margin-left: 1rem; }
+
+.advertisement__hiring-company-name {
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  text-decoration: underline; }
+
+.advertisement__hiring-jobclassifcation {
+  color: #000;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 15%;
+  left: 5%; }
+  .advertisement__hiring-jobclassifcation span {
+    font-weight: bold;
+    font-size: 1.3rem; }
 
 .advertisement__company, .advertisement__individual {
   width: 100%;
@@ -305,7 +390,7 @@ body {
   width: 100%;
   position: absolute;
   top: 95%; }
-  .advertisement__bottom-logo -photo {
+  .advertisement__bottom-logo-photo {
     height: 3rem;
     width: 100%; }
   .advertisement__bottom-logo-bgcolorharcourts {
@@ -517,9 +602,22 @@ body {
   background-color: #fff; }
 
 .container-fluid {
-  margin-right: 1rem !important;
+  margin-right: 0rem !important;
   margin-left: 1rem !important; }
   @media (max-width: 37.5em) {
     .container-fluid {
-      margin-right: 0 !important;
-      margin-left: 0 !important; } }
+      margin-right: 0rem !important;
+      margin-left: 0rem !important; } }
+
+.col-md-3 {
+  -ms-flex: 0 0 24%;
+  flex: 0 0 24%;
+  max-width: 24%; }
+
+.row {
+  margin-right: 1rem !important; }
+  .row [class="col-"]:last-child {
+    margin-right: 0rem !important; }
+  @media (max-width: 37.5em) {
+    .row [class="col-"] {
+      margin-right: 0 !important; } }
