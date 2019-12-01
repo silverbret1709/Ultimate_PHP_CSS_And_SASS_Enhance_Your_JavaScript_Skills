@@ -54,10 +54,11 @@
   }
 
   &__btn {
+    z-index: 1;
     background-color: inherit;
     right: 1rem;
     height: 3rem;
-    top: 7rem;
+    top: 8rem;
     position: absolute;
     border: none;
     cursor: pointer;
