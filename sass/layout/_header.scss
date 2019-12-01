@@ -10,6 +10,10 @@
   -webkit-clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 0);
   clip-path:  polygon(100% 0, 100% 89%, 0 100%, 0 0);
 
+  @include mediaQuery(phone6) {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
   &__title-box {
     position: absolute;
     top: 30%;
