@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b7d1d7-0e87-49ab-9905-4d9a047b80e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_register.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -62,11 +64,11 @@
       <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\PHP_PROJECTS\PHP\EBOOKS&amp;COURSES\COURSES\UDEMY" />
       <recent name="D:\PROJECTS\PHP_PROJECTS\PHP\EBOOKS&amp;COURSES\COURSES\UDEMY\img" />
       <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\img" />
       <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\img\svg" />
       <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\sass\layout" />
-      <recent name="G:\PROJECTS\PHP\PHP\COURSES&amp;BOOKS\COURSES\UDEMY\Ultimate_PHP_CSS_And_SASS_Enhance_Your_JavaScript_Skills\vendors\fontawesome" />
     </key>
   </component>
   <component name="RunManager" selected="npm.watch-css">
@@ -126,7 +128,7 @@
       <workItem from="1575045391247" duration="1561000" />
       <workItem from="1575049930782" duration="5910000" />
       <workItem from="1575158794320" duration="76000" />
-      <workItem from="1575158871264" duration="2671000" />
+      <workItem from="1575158871264" duration="4792000" />
     </task>
     <servers />
   </component>
@@ -138,29 +140,29 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="740" y="354" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1575158842635" />
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1575161127058">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1575163699538">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1575161127058" />
-    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1575161127058">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1575163699538" />
+    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1575163699538">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1575161127058" />
-    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1575161127057">
+    <state width="1877" height="314" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1575163699538" />
+    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1575163699538">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1575161127057" />
-    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1575161127058">
+    <state width="1877" height="314" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1575163699538" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1575163699538">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575161127058" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1575163699538" />
     <state x="461" y="241" key="SettingsEditor" timestamp="1575160526583">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="461" y="241" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1575160526583" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1575055349089">
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1575162816498">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1575055349089" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1575162816498" />
   </component>
 </project>

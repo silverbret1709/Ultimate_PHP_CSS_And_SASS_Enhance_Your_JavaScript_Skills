@@ -1,11 +1,11 @@
-.section-register {
+.section-login  {
   //background-color: green;
   height      : 100vh;
   position    : relative;
   color       : $color-white;
   font-family : $roboto-font;
 
-  .register {
+  .login {
 
 
 
@@ -44,7 +44,7 @@
             font-size : 3rem;
           }
         }
-        box-shadow: 0rem 1rem 2rem rgba($color-white, .4);
+        box-shadow: 0rem 1rem 2rem rgba($color-black, .4);
 
       }
 
@@ -52,7 +52,7 @@
       //background-color : green;
       width            : 43rem;
       border-radius    : 15px;
-      background-image : linear-gradient(to bottom, $profile-color-darkviolet, $color-harcourts);
+      background-image : linear-gradient(to top, $watsup, $color-green-dark);
 
       &__group:not(:last-child) {
         margin-bottom : 2rem;
@@ -73,14 +73,14 @@
         margin-left      : 5%;
         margin-right     : 5%;
         display          : block;
-        color: inherit;
+        color: inherit !important;
 
         @include mediaQuery(phone6) {
           font-size : 1.8rem;
         }
 
         &:focus {
-          border-bottom : 3px solid $watsup;
+          border-bottom : 3px solid $color-upa;
           //box-shadow    : 0 1rem 2rem rgba($color-black, .1);
         }
 
@@ -120,7 +120,7 @@
     }
   }
 
-  .register:before {
+  .login:before {
     background-image    : url("../../img/anders-jilden-239-unsplash.jpg");
     background-position : top;
     background-size     : cover;

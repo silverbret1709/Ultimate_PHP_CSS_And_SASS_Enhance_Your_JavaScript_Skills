@@ -403,14 +403,18 @@ body {
   position: relative;
   color: #fff;
   font-family: "Roboto", sans-serif; }
+  @media (max-width: 37.5em) {
+    .section-register .register {
+      font-size: 2rem; } }
   .section-register .register__form {
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 43rem;
     border-radius: 15px;
-    background-image: linear-gradient(to bottom, #9370DB, #9370DB); }
+    background-image: linear-gradient(to bottom, #9370DB, #001f49); }
     .section-register .register__form-heading {
       font-size: 3rem;
       text-align: center;
@@ -424,13 +428,24 @@ body {
       background-color: #fff;
       text-align: center;
       margin: 0 auto;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      box-shadow: 0rem 1rem 2rem rgba(255, 255, 255, 0.4); }
+      @media (max-width: 37.5em) {
+        .section-register .register__form-logo {
+          width: 7rem;
+          height: 7rem; } }
       .section-register .register__form-logo i {
         padding-top: 2rem;
         color: #000;
         font-size: 5rem; }
+        @media (max-width: 37.5em) {
+          .section-register .register__form-logo i {
+            font-size: 3rem; } }
     .section-register .register__form__group:not(:last-child) {
       margin-bottom: 2rem; }
+    @media (max-width: 37.5em) {
+      .section-register .register__form {
+        width: 100%; } }
     .section-register .register__form__input {
       font-family: "Roboto", sans-serif;
       font-size: 1.5rem;
@@ -441,7 +456,11 @@ body {
       width: 90%;
       margin-left: 5%;
       margin-right: 5%;
-      display: block; }
+      display: block;
+      color: inherit; }
+      @media (max-width: 37.5em) {
+        .section-register .register__form__input {
+          font-size: 1.8rem; } }
       .section-register .register__form__input:focus {
         border-bottom: 3px solid #25d366; }
       .section-register .register__form__input:focus:invalid {
@@ -452,8 +471,127 @@ body {
       display: block;
       font-family: "Roboto", sans-serif;
       margin-left: 2.5rem;
-      margin-top: .7rem; }
+      margin-top: .7rem;
+      transition: all .3s; }
+      @media (max-width: 37.5em) {
+        .section-register .register__form__label {
+          font-size: 1.8rem; } }
+    .section-register .register__form__input:placeholder-shown + label {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-5rem); }
+    .section-register .register__form .already-member {
+      font-size: 1.3rem;
+      text-align: right;
+      margin-right: 3rem; }
+      @media (max-width: 37.5em) {
+        .section-register .register__form .already-member {
+          font-size: 1.8rem; } }
   .section-register .register:before {
+    background-image: url("../../img/anders-jilden-239-unsplash.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: .3; }
+
+.section-login {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  font-family: "Roboto", sans-serif; }
+  @media (max-width: 37.5em) {
+    .section-login .login {
+      font-size: 2rem; } }
+  .section-login .login__form {
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 43rem;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #25d366, #008b2e); }
+    .section-login .login__form-heading {
+      font-size: 3rem;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase; }
+    .section-login .login__form-logo {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background-color: #fff;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4); }
+      @media (max-width: 37.5em) {
+        .section-login .login__form-logo {
+          width: 7rem;
+          height: 7rem; } }
+      .section-login .login__form-logo i {
+        padding-top: 2rem;
+        color: #000;
+        font-size: 5rem; }
+        @media (max-width: 37.5em) {
+          .section-login .login__form-logo i {
+            font-size: 3rem; } }
+    .section-login .login__form__group:not(:last-child) {
+      margin-bottom: 2rem; }
+    @media (max-width: 37.5em) {
+      .section-login .login__form {
+        width: 100%; } }
+    .section-login .login__form__input {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      border-radius: 2px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background-color: transparent;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: block;
+      color: inherit !important; }
+      @media (max-width: 37.5em) {
+        .section-login .login__form__input {
+          font-size: 1.8rem; } }
+      .section-login .login__form__input:focus {
+        border-bottom: 3px solid #ffeb01; }
+      .section-login .login__form__input:focus:invalid {
+        border-bottom: 3px solid #eb1f27; }
+    .section-login .login__form__label {
+      font-size: 1.2rem;
+      font-weight: 300;
+      display: block;
+      font-family: "Roboto", sans-serif;
+      margin-left: 2.5rem;
+      margin-top: .7rem;
+      transition: all .3s; }
+      @media (max-width: 37.5em) {
+        .section-login .login__form__label {
+          font-size: 1.8rem; } }
+    .section-login .login__form__input:placeholder-shown + label {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-5rem); }
+    .section-login .login__form .already-member {
+      font-size: 1.3rem;
+      text-align: right;
+      margin-right: 3rem; }
+      @media (max-width: 37.5em) {
+        .section-login .login__form .already-member {
+          font-size: 1.8rem; } }
+  .section-login .login:before {
     background-image: url("../../img/anders-jilden-239-unsplash.jpg");
     background-position: top;
     background-size: cover;
