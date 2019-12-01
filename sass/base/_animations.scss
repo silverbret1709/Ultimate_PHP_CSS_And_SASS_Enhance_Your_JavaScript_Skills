@@ -28,3 +28,12 @@
     transform: translateX(0);
   }
 }
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}

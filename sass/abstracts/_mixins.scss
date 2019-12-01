@@ -4,6 +4,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin a-links($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+      text-decoration: none;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
 /*
   Mobilde Device 0-600px
   Table: 600-900
@@ -89,3 +105,4 @@
 
 
 }
+
