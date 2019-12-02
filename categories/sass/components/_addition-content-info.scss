@@ -1,0 +1,53 @@
+.addition-content-info {
+  border: 1px solid $color-crimson-red;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(15rem, 1fr));
+  grid-template-rows: repeat(4, min-content);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0rem 1rem 2rem rgba($color-black, .4);
+  @include a-links($color-primary-very-dark, $secondary-color, $profile-color-primary-dark, $color-secondary-dark);
+
+  .ul-reset {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    list-style: none;
+
+  }
+  .general_features {
+
+    @include mediaQuery(phone6) {
+      grid-row: 1/2;
+      grid-column: 1/span 2;
+    }
+  }
+
+  .indoor_features {
+
+    @include mediaQuery(phone6) {
+      grid-row: 2/3;
+      grid-column: 1/span 2;
+    }
+  }
+
+  .outdoor_features {
+    @include mediaQuery(phone6) {
+      grid-row: 3/4;
+      grid-column: 1/span 2;
+    }
+  }
+
+  .floorplans_features {
+    @include mediaQuery(phone6) {
+      grid-row: 4/5;
+      grid-column: 1/span 2;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.input-style, .textarea, .select-style {
+  font-family : inherit;
+  font-size : 2rem !important;
+  height : 5rem;
+  border-radius: 3px !important;
+  color: #15b374;
+  input {
+    font-size : inherit !important;
+    width : 90%;
+  }
+}
+
+.textarea {
+  min-height: 15rem;
+
+}

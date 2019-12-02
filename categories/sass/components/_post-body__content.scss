@@ -1,0 +1,104 @@
+.post-body__content {
+  display: grid;
+  grid-template-rows: repeat(4, min-content(1fr));
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-top: 3px solid black;
+  @include mediaQuery(tabletPort7) {
+    margin-top: 2.5rem;
+    margin: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-sub {
+    grid-column: 1/ span 2;
+    padding: 2.5rem;
+
+    & > * {
+      text-align: center;
+    }
+
+    &--2 {
+      text-align: left!important;
+      padding-top: 0.5rem;
+    }
+
+    @include mediaQuery(tabletPort7) {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &-desc {
+    grid-row: 2/ span 2;
+    grid-column: 1/ span 2;
+    font-size: 1.9rem;
+    padding: 1rem 2rem;
+    @include mediaQuery(tabletPort7) {
+      grid-column: 1/-1;
+
+    }
+  }
+
+  .contact-agent-box {
+    border-radius: 5px;
+    box-shadow: 0rem 1rem 2rem rgba($color-black, .4);
+    margin-top: 2.7rem;
+    color: $color-white;
+    background-color: $color-black;
+    grid-column: 3/-1;
+    grid-row: 1/2;
+
+    @include mediaQuery(tabletPort7) {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+    }
+    &-heading {
+      height: 2rem;
+      font-size: 2rem;
+      color: $primary-color-dark;
+      padding: .5rem 1rem;
+    }
+
+    &-desc {
+      margin-top: 1rem;
+      background-color: $color-crimson-red;
+      padding: 1rem 2rem;
+
+
+    }
+
+    a {
+      text-align: center;
+    }
+
+
+  }
+
+  &-postmap {
+    height: 100%;
+    grid-row: 3/4;
+    grid-column: 3/-1;
+    @include mediaQuery(tabletPort7) {
+      text-align: center;
+      grid-column: 1/-1;
+      grid-row: 5/6;
+    }
+
+    &-address {
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+    }
+
+    &-map {
+      min-height: 25rem;
+    }
+
+  }
+
+
+
+
+}

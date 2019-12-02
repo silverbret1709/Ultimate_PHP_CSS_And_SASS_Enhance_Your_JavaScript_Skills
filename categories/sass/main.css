@@ -1,0 +1,108 @@
+/*
+small mobile device 0-500px
+mobile device 0-600px
+tablet 600-900
+tablet landscape 900-1200
+desktop 1200 -1800
+large display 1800+
+$screenSize
+smallPhone5
+phone6
+tabletPort7
+tabletPort8
+tabletPort9
+tabletLand1
+tabletLand2
+tabletLand3
+desktop 1800px +
+lgdesktop
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+  font-size: 1.8rem;
+  box-sizing: border-box; }
+
+.post-gallery {
+  background-color: #000;
+  font-family: "Nunito", sans-serif;
+  position: relative; }
+  .post-gallery .sliding-images {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 75%;
+    height: 60rem;
+    margin: 0 auto; }
+  .post-gallery .slide {
+    grid-row: 1/-1;
+    grid-column: 1/-1; }
+    .post-gallery .slide .carousel-inner img {
+      background-position: top !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      height: 60rem !important;
+      width: 100% !important; }
+  .post-gallery .gallery-description {
+    z-index: 1;
+    width: 70%;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(2, min-content, 1fr); }
+
+.post-container {
+  display: grid;
+  grid-template-rows: repeat(9, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .post-container .post-gallery {
+    grid-column: full-start/full-end; }
+  .post-container .post-author {
+    grid-column: full-start/full-end;
+    grid-row: 2/3; }
+  .post-container .bonapp-image {
+    background-color: blue;
+    grid-column: full-start/full-end;
+    grid-row: 3/4; }
+  .post-container .post-body__content {
+    background-color: blue;
+    grid-column: center-start/center-end;
+    grid-row: 4/5; }
+  .post-container .addition-content-info {
+    background-color: slateblue;
+    grid-column: center-start/center-end;
+    grid-row: 5/6; }
+  .post-container .contact-agent {
+    background-color: teal;
+    grid-column: center-start/center-end;
+    grid-row: 7/8; }
+  .post-container .post-comment {
+    background-color: turquoise;
+    grid-column: center-start/center-end;
+    grid-row: 7/8; }
+  .post-container .post-footer {
+    background-color: sandybrown;
+    grid-column: center-start/center-end;
+    grid-row: 8/9; }
+
+/*# sourceMappingURL=main.css.map */
