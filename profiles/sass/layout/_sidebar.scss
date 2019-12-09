@@ -1,0 +1,226 @@
+.sidebar {
+  background-image: linear-gradient(to right bottom, $profile-color-primary-blue, $profile-color-primary-purple-light);
+  flex: 0 0 15%;
+  z-index: 1000;
+
+
+  //style right side border of the sidebar
+  border-width: 0 1rem 0 0;
+  border-style: solid;
+  border-image: linear-gradient(to bottom,
+          $profile-color-primary-purple-light,
+          $color-black
+  ) 1 100%;
+
+  @include mediaQuery(tabletPort9) {
+    border-image: none;
+    max-width: 0;
+    max-height: 0;
+    visibility: hidden;
+  }
+
+  &-nav {
+    font-size: 1.3rem;
+    @include mediaQuery(tabletPhone9) {
+      font-size: 1.9rem;
+    }
+    list-style: none;
+    text-align: center;
+
+    &__item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+    }
+
+    &__item > ul {
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 105%;
+      background-image: linear-gradient(to right bottom, $profile-color-primary-blue, $profile-color-primary-purple-light);
+
+      @include mediaQuery(tabletPort9) {
+        background-image: none;
+        background-image: linear-gradient(
+                        to right bottom,
+                        $color-green-light,
+                        $color-green-very-dark
+        );
+      }
+    }
+
+    &__item:hover > ul {
+      display: block;
+      width: 100%;
+
+
+    }
+
+    &__link:link,
+    &__link:visited {
+      text-transform: uppercase;
+      padding: 1.5rem 3rem;
+      text-decoration: none;
+      color: $color-white;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+      transition: color .5s ease;
+    }
+
+    &__link-btn {
+      background: none;
+      border: none;
+      color: $color-white;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    &__icon {
+      width: 1.75rem;
+      height: 1.75rem;
+      fill: currentColor;
+      margin-right: 2rem;
+
+      @include mediaQuery(tabletPort9) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    &__link:before, &__link:after {
+      content: '';
+      position: absolute;
+      transition: all .5s ease;
+
+      @include mediaQuery(tabletPort9) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    &__link:hover {
+      color: $color-black;
+    }
+
+    &__link:before {
+      top: 0rem;
+    }
+
+    &__link:after {
+      bottom: 0rem;
+    }
+
+    &__link:before, &__link:after {
+      height: .35rem;
+      background-color: $color-white;
+      width: 0%;
+    }
+
+
+    &__link:before {
+      left: 0;
+    }
+
+    &__link:after {
+      right: 0;
+    }
+
+    &__link:hover:before, &__link:hover:after {
+      width: 100%;
+    }
+  }
+
+  //Humburger menu styles
+  &__checkbox {
+    display: none;
+  }
+
+  @include mediaQuery(tabletPort9) {
+    &-menu__button {
+      visibility: visible;
+      height: 5.2rem;
+      width: 5.2rem;
+      position: fixed;
+      top: 1.3rem;
+      left: 1.7rem;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 2;
+      box-shadow: 0rem 1rem 2rem rgba($color-black, 0.6);
+
+    }
+
+    &-menu__background {
+      display: block;
+      visibility: visible;
+      top: .7rem;
+      left: 1.15rem;
+      height: 6.2rem;
+      width: 6.2rem;
+      position: fixed;
+      background-image: linear-gradient(
+                      to right bottom,
+                      $color-green-very-dark,
+                      $color-green-light
+      );
+      border-radius: 50%;
+    }
+    &__checkbox:checked ~ &-menu__background {
+      -webkit-clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);
+      transform: scale(60);
+    }
+
+    &__checkbox:checked ~ &-nav {
+      visibility: visible;
+      position: fixed;
+      top: 10%;
+      left: 0%;
+    }
+
+    &-menu__icon {
+      position: relative;
+      margin-top: 2.5rem;
+      margin-left: 1rem;
+
+      &,
+      &:before,
+      &:after {
+        height: 2px;
+        width: 3rem;
+        background-color: white;
+        display: inline-block;
+        transition: all .3s ease-in-out;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+      }
+      &::before {
+        top: -1rem;
+      }
+
+      &::after {
+        top: 1rem;
+      }
+    }
+    &__checkbox:checked + &-menu__button &-menu__icon {
+      transform: rotate(45deg);
+      background: transparent;
+    }
+
+    &__checkbox:checked + &-menu__button &-menu__icon::before {
+      transform: rotate(0deg) translateY(1rem);
+    }
+
+    &__checkbox:checked + &-menu__button &-menu__icon::after {
+      transform: rotate(90deg) translateX(-1rem);
+    }
+  }
+}

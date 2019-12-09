@@ -1,0 +1,176 @@
+.section-posts {
+  margin-top : 3rem;
+  margin-bottom : 3rem;
+  padding : 1rem 2rem;
+
+  .post {
+    position : relative;
+    padding : 1rem 2rem;
+    height : 60rem;
+    width : 100%;
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background-image: linear-gradient(
+                    -45deg, #24ff72, #9a4eff
+    );
+    transition: all .5s;
+
+    //&:hover {
+    //  transform: scale(1.05);
+    //}
+
+
+
+    &__img {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width : 100%;
+      height : 23.5rem;
+    }
+    .carousel-inner {
+      height : 23.5rem;
+    }
+
+    &__total-images {
+      position : absolute;
+      width : 100%;
+      top: 2%;
+      right : 2%;
+      color: $color-white;
+      z-index: 1;
+      background-color: rgba($profile-color-grey-dark-1, .8);
+      width : 2rem;
+      height : 2rem;
+      font-size : 1.5rem;
+      border-radius: 5px;
+    }
+    &-heading {
+      position : absolute;
+      padding : 1rem 1.5rem;
+      z-index: 1;
+      color: $color-white;
+      margin-left : -2rem;
+      height : 5rem;
+      font-size : 1.8rem;
+      overflow: hidden;
+    }
+
+    &__price {
+      position : absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height : 5rem;
+      color: $color-white;
+      font-size : 2rem;
+    }
+    &-description {
+
+      width : 100%;
+      position : absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size : 1.5rem;
+      height : 12.7rem;
+      text-align : left;
+      overflow: hidden;
+      color: $color-black;
+    }
+
+    &-links {
+      width : 100%;
+      height : auto;
+      color: $color-black;
+      position : absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+
+      &__edit, &__delete, &__add-to-cart, &__checkout {
+        background: $color-white;
+        width : 12rem;
+        height : 4rem;
+        border-radius: 3rem;
+        font-size : 1.6rem;
+        padding : 1rem 2rem;
+        box-shadow: 0rem .5rem 1rem rgba($color-black, .4);
+        text-decoration : none;
+      }
+
+      &__edit {
+        margin-right : 1rem;
+        &:hover {
+          color: $color-black;
+        }
+      }
+
+      &__delete {
+        margin-left : 1rem;
+        &:hover {
+          color: $color-black;
+        }
+      }
+
+      &__add-to-cart {
+        background-color: $secondary-color-dark;
+        color: $color-white;
+        &:hover {
+          color: $color-black;
+        }
+      }
+
+      &__checkout {
+        background-color: $secondary-color-dark;
+        color: $color-white;
+        &:hover {
+          color: $color-black;
+        }
+      }
+
+    }
+
+    &-details {
+      width : 100%;
+      position : absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding : .5rem 1.5rem;
+      color: $color-white;
+
+      &__date-icon {
+        font-size : 1.5rem;
+        color: $secondary-color;
+        margin-right : 1rem;
+      }
+
+
+      &__map-icon {
+        font-size : 1.5rem;
+        color: $profile-color-primary-light;
+        margin-right : 1rem;
+      }
+
+
+      &__price-icon {
+        font-size : 1.5rem;
+        color: $color-secondary-dark;
+        margin-right : 1rem;
+      }
+    }
+  }
+  .post:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width : 100%;
+    height : 30%;
+    background: rgba(255, 255, 255, .3);
+    transform: skewY(-5deg) scale(1.7);
+  }
+}

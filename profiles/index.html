@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700|Nunito+Sans:300,400,700|Open+Sans:300,400,700|Roboto:100,300,400,700" rel="stylesheet">
+    <!-- CSS styles -->
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <!--Summernote-->
+    <script src="vendors/js/jquery-3.4.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
+
+    <title>Profile Admin, manage your ads, payment and campaigns from one place</title>
+</head>
+<body>
+
+<div class="container-fluid my-flex-container">
+    <header class="header-profile d-flex justify-content-between align-items-center">
+        <img src="img/logo.png" alt="" class="profile__logo">
+        <nav class="nav">
+            <div class="nav__box">
+                <svg class="nav__box-icon">
+                    <use xlink:href="img/SVG/symbol-defs.svg#icon-envelope-open-o"></use>
+                </svg>
+                <span class="nav__box-notif">3</span>
+            </div>
+            <div class="nav__box">
+                <svg class="nav__box-icon">
+                    <use xlink:href="img/SVG/symbol-defs.svg#icon-comments"></use>
+                </svg>
+                <span class="nav__box-notif">7</span>
+            </div>
+            <div class="nav__box">
+                <svg class="nav__box-icon nav__box-icon--shopping_cart">
+                    <use xlink:href="img/SVG/symbol-defs.svg#icon-shopping-cart"></use>
+                </svg>
+                <span class="nav__box-notif">7</span>
+            </div>
+            <div class="nav__user dropdown">
+                <img src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="user img" class="nav__user-photo">
+                <a href="dropdown-toggle" data-toggle="dropdown" class="user-name">
+                    <span class="nav__user-name carrot">Bonny &#9660;</span>
+                    <ul class="nav__user-dropdown dropdown-menu">
+                        <li class="nav__user-item">
+                            <a href="#" class="nav__user-link">
+                                <svg>
+                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-sign-out"></use>
+                                    <span>Sign Out</span>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <div class="nav__online">
+                <span class="nav_notif u-online"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="content d-flex">
+        <nav class="sidebar">
+            <input type="checkbox" class="sidebar__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="sidebar-menu__button">
+                <span class="sidebar-menu__icon"></span>
+            </label>
+            <div class="sidebar-menu__background"></div>
+            <ul class="sidebar-nav" id="menu">
+                <li class="sidebar-nav__item">
+                    <a href="" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-home"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Home</button>
+                    </a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-paypal"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Payments</button>
+                    </a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-area-chart"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Statistics</button>
+                    </a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-box-add"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Complete Details</button>
+                    </a>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-nav__item">
+                            <a data-page="#" href="" class="sidebar-nav__link">
+                                <svg class="sidebar-nav__icon">
+                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-edit"></use>
+                                </svg>
+                                <button type="submit" class="sidebar-nav__link-btn">Edit</button>
+                            </a>
+                        </li>
+                        <li class="sidebar-nav__item">
+                            <a href="" class="sidebar-nav__link">
+                                <svg class="sidebar-nav__icon">
+                                    <use xlink:href="img/SVG/symbol-defs.svg#icon-refresh"></use>
+                                </svg>
+                                <button type="submit" class="sidebar-nav__link-btn">View</button>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-bell-o"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Notifications Center</button>
+                    </a>
+                </li>
+
+                <li class="sidebar-nav__item">
+                    <a href="" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-cc-stripe"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Pay Posts</button>
+                    </a>
+                </li>
+                <li class="sidebar-nav__item">
+                    <a href="#modal-popup" class="sidebar-nav__link">
+                        <svg class="sidebar-nav__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-eye"></use>
+                        </svg>
+                        <button type="submit" class="sidebar-nav__link-btn">Add/Update</button>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <main class="content-center">
+            <div class="profile-search d-flex justify-content-between align-content-center">
+                <div class="profile-search__search-box">
+                    <button class="icon-btn-left">
+                        <svg class="profile-search__search-box__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <input type="text" class="profile-search__input"
+                           id="searched-place " autocomplete="off" placeholder="Type Postcode or Location...">
+                    <!--here should be the div that will display1 the searched places-->
+                </div>
+
+                <div class="profile-search__search-box">
+                    <input type="text" class="profile-search__input profile-search__input--2"
+                           id="searched-place " autocomplete="off" placeholder="Search Name or Profession...">
+                    <button class="icon-btn-right">
+                        <svg class="profile-search__search-box__icon">
+                            <use xlink:href="img/SVG/symbol-defs.svg#icon-paper-plane-o"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button class="btn-profile profile-search__submit" id="submit-searchForm">
+                    <span class="btn-profile__visible">Search</span>
+                    <span class="btn-profile__invisible">Find Profiles</span>
+                </button>
+            </div>
+            Price for advertising
+            <div class="heading-tertiary mt-3">Select The Type of the Ads</div>
+            <div class="prices d-flex">
+                <div class="price_card">
+                    <div class="price_card__title price_card__title--free">
+                        <i class="fa fa-paper-plane price_card--plane"></i>
+                        <h2>Free Ads</h2>
+                    </div>
+                    <div class="price_card__price price_card__price--free">
+                        <h4>$<span>0</span></h4>
+                    </div>
+                    <div class="price_card__option">
+                        <ul>
+                            <li><i class="fa fa-check price_li"></i>Free Post</li>
+                            <li><i class="fa fa-check price_li"></i>Not guaranteed first option</li>
+                            <li><i class="fa fa-check price_li"></i>You will be listed free in the free section</li>
+                            <li><i class="fa fa-check price_li"></i>Best Option for Beginner</li>
+                        </ul>
+                    </div>
+                    <a href="">Free Ad Now</a>
+                </div>
+                <!--Second Price Card-->
+                <div class="price_card">
+                    <div class="price_card__title price_card__title--standard">
+                        <i class="fa fa-rocket price_card--space-shuttle"></i>
+                        <h2>Standard Ads</h2>
+                    </div>
+                    <div class="price_card__price price_card__price--standard">
+                        <h4>$<span>50</span></h4>
+                    </div>
+                    <div class="price_card__option">
+                        <ul>
+                            <li><i class="fa fa-check price_li"></i>50c per Day</li>
+                            <li><i class="fa fa-check price_li"></i>First Place Ultil Someone place a new Paid Ads for the same Lacation</li>
+                            <li><i class="fa fa-check price_li"></i>Be seen in front of other free posts</li>
+                            <li><i class="fa fa-check price_li"></i>You can go to premium any time</li>
+                        </ul>
+                    </div>
+                    <a href="">Standard Ad Now</a>
+                </div>
+                <!--Third Price Card-->
+                <div class="price_card">
+                    <div class="price_card__title price_card__title--premium">
+                        <i class="fa fa-fire price_card--fire"></i>
+                        <h2>Premium Ads</h2>
+                    </div>
+                    <div class="price_card__price price_card__price--premium">
+                        <h4>+ $<span>50</span></h4>
+                    </div>
+                    <div class="price_card__option">
+                        <ul>
+                            <li><i class="fa fa-check price_li"></i>Best Other with 50c more</li>
+                            <li><i class="fa fa-check price_li"></i>First Place</li>
+                            <li><i class="fa fa-check price_li"></i>Select How many day</li>
+                            <li><i class="fa fa-check price_li"></i>Best Deal Ever</li>
+                        </ul>
+                    </div>
+                    <a href="">Premium Ads Now</a>
+                </div>
+            </div>
+            <!--Section for displaying all of users posts-->
+            <div class="heading-tertiary mt-3">Our Active Posts/Ads</div>
+            <section class="section-posts d-none">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="post text-center">
+                            <div class="post__total-images">5</div>
+                            <h2 class="post-heading">Part Time Adminstration Assistant 15 hours per week</h2>
+                            <div id="carouselExampleIndicators" class="carousel slide post__img" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/patrick-tomasso-70305-unsplash.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/paul-carmona-322358-unsplash.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!--End of carousel-->
+
+                            <div class="post__price">
+                                <h1 class="post__price-margin"><sup>Mackay Group</sup></h1>
+                            </div>
+                            <div class="post-description">
+                                <p class="post-description__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aliquid asperiores cum distinctio error fugiat itaque nam
+                                    nobis quibusdam repudiandae, suscipit! Corporis culpa, cupiditate
+                                    et incidunt ipsa possimus rerum? Iste, reprehenderit!
+                                </p>
+                            </div>
+                            <div class="post-icons">
+                                <p class="post-icons__styles"><span>House</span><i class="fa fa-home"></i></p>
+                                <p class="post-icons__styles"><span>3</span><i class="fa fa-bed"></i></p>
+                                <p class="post-icons__styles"><span>2</span><i class="fa fa-shower"></i></p>
+                                <p class="post-icons__styles"><span>1 P</span><i class="fa fa-home"></i></p>
+                            </div>
+                            <div class="post-links">
+                                <a class="post-links__edit" href="#">Edit <i class="fa fa-edit"></i></a>
+                                <a class="post-links__delete" href="#">Delete <i class="fa fa-trash"></i></a>
+                            </div>
+
+                            <div class="post-details">
+                                <div class="post-details__date-posted">
+                                    <span><i class="fa fa-calendar post-details__date-icon"></i>2020-12-21</span>
+                                </div>
+                                <div class="post-details__location">
+                                    <span><i class="fa fa-map post-details__map-icon"></i>Brighton, Vic 19966</span>
+                                </div>
+                                <div class="post-details__paid-status">
+                                    <span><i class="fa fa-dollar  post-details__price-icon"></i>0-Unpaid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End of the Ads-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="post text-center">
+                            <div class="post__total-images">3</div>
+                            <h2 class="post-heading">17 Dover Court Brighton, vic 19966</h2>
+                            <div id="carouselExampleIndicators1" class="carousel slide post__img" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/desola-lanre-ologun-709897-unsplash.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/anders-jilden-239-unsplash.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!--End of carousel-->
+
+                            <div class="post__price">
+                                <h1 class="post__price-margin"><sup>$</sup>650,000</h1>
+                            </div>
+                            <div class="post-description">
+                                <p class="post-description__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aliquid asperiores cum distinctio error fugiat itaque nam
+                                    nobis quibusdam repudiandae, suscipit! Corporis culpa, cupiditate
+                                    et incidunt ipsa possimus rerum? Iste, reprehenderit!
+                                </p>
+                            </div>
+                            <div class="post-icons">
+                                <p class="post-icons__styles"><span>House</span><i class="fa fa-home"></i></p>
+                                <p class="post-icons__styles"><span>3</span><i class="fa fa-bed"></i></p>
+                                <p class="post-icons__styles"><span>2</span><i class="fa fa-shower"></i></p>
+                                <p class="post-icons__styles"><span>1 P</span><i class="fa fa-home"></i></p>
+                            </div>
+                            <div class="post-links">
+                                <a class="post-links__edit" href="#">Edit <i class="fa fa-edit"></i></a>
+                                <a class="post-links__delete" href="#">Delete <i class="fa fa-trash"></i></a>
+                            </div>
+
+                            <div class="post-details">
+                                <div class="post-details__date-posted">
+                                    <span><i class="fa fa-calendar post-details__date-icon  "></i>2020-12-21</span>
+                                </div>
+                                <div class="post-details__location">
+                                    <span><i class="fa fa-map post-details__map-icon"></i>Brighton, Vic 19966</span>
+                                </div>
+                                <div class="post-details__paid-status">
+                                    <span><i class="fa fa-dollar  post-details__price-icon"></i>0-Unpaid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End of the Ads-->
+                </div> <!--End of row-->
+            </section> <!--End section posts-->
+
+            <!--pop-up section-->
+            <!--            <div class="heading-tertiary mt-3">Our Custom make modal</div>-->
+            <section class="popup-section start" id="modal-popup">
+                <div class="popup">
+                    <div class="popup-content">
+                        <div class="popup-header">
+                            <h3 class="popup-header__title heading-modal">Add Photo</h3>
+                            <a href="#" class="close popup-header__close">&times;</a>
+                        </div>
+                        <div class="popup-body">
+                            <form action="add-photo.html" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input type="file" name="file" id="file" class="form-control input-style" required>
+                                </div>
+                                <div class="popup-submit">
+                                    <input type="submit" name="picture" class="btn btn-success popup-submit__btn-modal" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Profile Form here-->
+            <div class="content-form d-flex justify-content-center align-items-center flex-wrap d-none">
+                <div class="heading-tertiary">Add Post</div>
+                <form action="" enctype="multipart/form-data" method="post" name="multifilesub" id="multifilesub" class="profile-form">
+                    <div>
+                        <label class="subtitle-style">Every freer post/ad can be maximum posted for 30 days</label>
+                    </div>
+                    <div class="profile-form__styling">
+                        <label for="post_title" class="label-style">Ads Title</label>
+                        <input type="text" name="post_title" id="post_title" placeholder="Enter your title" autocomplete="off" required class="input-style">
+                    </div>
+                    <div class="profile-form__styling">
+                        <label for="post_price_type" class="label-style">Select Price</label>
+                        <select name="post_price_type" id="post_price_type" class="form-control select-style">
+                            <option value="free" selected>Free</option>
+                            <option value="standard">Standard</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+                    <div class="profile-form__styling">
+                        <label for="startDate" class="label-style">Start Date</label>
+                        <input type="date" name="post_dateStart" id="startDate" max="3000-12-30" class="input-style" required
+                               placeholder="yyyy-mm-dd" autocomplete="off">
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center flex-wrap">
+                        <div class="profile-form__left-select">
+                            <label for="ad_category" class="label-style">Select Category</label>
+                            <select name="ad_category" id="ad_category" class="select-style form-control" required>
+                                <option value="1" selected>Realestate</option>
+                                <option value="2">Jobs</option>
+                                <option value="3">Antiques</option>
+                            </select>
+                        </div>
+
+                        <div class="profile-form__right-select">
+                            <label for="ad_subcategory" class="label-style">Select Sub-Category</label>
+                            <select name="ad_subcategory" id="ad_subcategory" class="select-style form-control" required>
+                                <option value="1" selected>House</option>
+                                <option value="2">Vila</option>
+                                <option value="3">Unit</option>
+                                <option value="4">Townhouse</option>
+                                <option value="5">Appartment</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="profile-form__styling">
+                        <label for="specific_item" class="label-style">Add Your Images</label>
+                        <input type="file" name="file[]" class="form-control input-style"
+                               multiple="multiple" required id="specific_item"
+                        >
+                    </div>
+
+                    <div class="d-flex justify-content-around align-items-end profile-form__item-price">
+                        <div class="">
+                            <label for="post_price" class="label-style">Price</label>
+                            <input type="text" name="post_price" id="post_price" placeholder="$100" autocomplete="off" class="input-style" readonly>
+                        </div>
+
+                        <div class="profile-form__item-price-radio">
+                            <div class="profile-form__radio-group">
+                                <input type="radio" name="radio_price" id="amount" class="profile-form__radio-input" value="amount">
+                                <label for="amount" class="profile-form__radio-label">
+                                    <span class="profile-form__radio-button"></span>Amount
+                                </label>
+                            </div>
+
+                            <div class="profile-form__radio-group">
+                                <input type="radio" name="radio_price" id="negotiable" class="profile-form__radio-input" value="negotiable">
+                                <label for="negotiable" class="profile-form__radio-label">
+                                    <span class="profile-form__radio-button"></span>Negotiable
+                                </label>
+                            </div>
+
+                            <div class="profile-form__radio-group">
+                                <input type="radio" name="radio_price" id="swap_trade" class="profile-form__radio-input" value="swap_trade">
+                                <label for="swap_trade" class="profile-form__radio-label">
+                                    <span class="profile-form__radio-button"></span>Swap/Trade
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="">
+                            <label for="company_email" class="label-style">Your Email</label>
+                            <input type="email" name="company_email" id="company_email" class="input-style" placeholder="Enter Your Email" autocomplete="off"
+                                   required>
+                        </div>
+
+                        <div class="">
+                            <label for="name" class="label-style">Your Company/Name</label>
+                            <input type="text" name="name" id="name" class="input-style" placeholder="Enter Your Name" autocomplete="off"
+                                   required>
+                        </div>
+
+                        <div class="">
+                            <label for="number" class="label-style">Your Number</label>
+                            <input type="text" name="number" id="number" class="input-style" placeholder="Enter Your Number/Phone" autocomplete="off"
+                                   required>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <label for="summernote" class="label-style">Content/Body of  your message</label>
+                        <div id="summernote"></div>
+                    </div>
+
+                    <div class="">
+                        <div class="">
+                            <label for="condition" class="label-style">Condition</label>
+                        </div>
+
+                        <div class="profile-form__radio-group">
+                            <input type="radio" class="profile-form__radio-input" id="new" value="new" name="condition">
+                            <label for="new" class="profile-form__radio-label">
+                                <span class="profile-form__radio-button"></span>New
+                            </label>
+                        </div>
+                        <div class="profile-form__radio-group">
+                            <input type="radio" class="profile-form__radio-input" id="used" value="used" name="condition">
+                            <label for="used" class="profile-form__radio-label">
+                                <span class="profile-form__radio-button"></span>Used
+                            </label>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-success form-btn" id="submit_post" type="submit">Publish</button>
+                    </div>
+                </form>
+            </div>
+            <div class="cart-section">
+                <div class="col-md-12">
+                    <div class="heading-tertiary">Your Unpaid Posts</div>
+                </div>
+                <p class="text-left shopping_bag_heading">
+                    Items in Your Cart
+                </p>
+                <div class="cart-wrapper">
+                    <div class="shopping_cart d-flex">
+                        <div class="shopping_bag d-flex">
+                            <img src="img/stephan-bechert.jpg" alt="" class="shopping_bag-img">
+                            <div class="shopping_bag-description d-flex flex-column">
+                                <p class="title">House for Sale in Victoria</p>
+                                <p class="red">Realestate</p>
+                                <p class="price">$550,600</p>
+                            </div>
+                            <div class="shopping_bag-remove d-flex flex-column">
+                                <p class="quantity"><span class="quantity-col">1 Item</span></p>
+                                <a href="cart.php?action=delete" class="remove">Remove</a>
+                            </div>
+
+                            <div class="shopping_bag-outside">
+                                <p class="price-outside"><sup>$</sup>550600 </p>
+                            </div>
+                        </div> <!--Shopping Bag ends-->
+                    </div> <!--Shopping Cart ends-->
+                    <div class="checkout_box">
+                        <div class="checkout_box__order-summary text-center">
+                            <p class="order">Order Summary</p>
+                        </div>
+                        <div class="checkout_box__total-price text-center">
+                            <p class="subtotal">Subtotal:</p>
+                            <p class="subtotal_price"><sup>$</sup>0.00</p>
+                        </div>
+                        <div class="checkout_box__checkout">
+                            <a href="#payment" class="btn checkout_box__button text-center"><i class="fa fa-lock"></i>Checkout</a>
+                        </div>
+                        <div class="checkout_box-payment-icons d-flex flex-row justify-content-center align-items-center">
+
+                            <svg class="checkout__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-paypal"></use>
+                            </svg>
+                            <svg class="checkout__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-visa"></use>
+                            </svg>
+
+                            <svg class="checkout__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-americanexpress"></use>
+                            </svg>
+
+                            <svg class="checkout__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-cc-stripe"></use>
+                            </svg>
+
+                            <svg class="checkout__icon">
+                                <use xlink:href="img/SVG/symbol-defs.svg#icon-mastercard"></use>
+                            </svg>
+
+                        </div>
+                    </div> <!--Checkbox ends-->
+
+                </div> <!--Shopping Wrapper ends-->
+
+                <div class="col-md-12" id="payment">
+                    <h1 class="heading-tertiary">Payment Section</h1>
+                </div>
+                <article class="card col-md-12">
+                    <div class="card-body p-5">
+                        <ul class="nav bg-light nav-pills rounded nav-fill" role="tablist">
+                            <li class="nav-item">
+                                <a href="#nav-tab-card" class="nav-link active" data-toggle="pill">
+                                    <i class="fa fa-credit-card"></i> Credit Card
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#nav-tab-paypal" class="nav-link" data-toggle="pill">
+                                    <i class="fa fa-paypal"></i> Paypal
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#nav-tab-bank" class="nav-link" data-toggle="pill">
+                                    <i class="fa fa-university"></i> Bank Transfer
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav-tab-card">
+                                <div class="form-row">
+                                    <form action="" method="post" class="margin-lg-t" id="payment-form">
+                                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+                                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                        <label for="card-element">
+                                            Credit or Debit Card
+                                        </label>
+                                        <input type="text" class="form-control" id="card-element" placeholder="Your Card Number">
+                                        <button class="btn btn-primary btn-block mt-4">Submit Payment</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-tab-paypal">
+                                <form action="" method="post" id="paypal_form" class="paypal">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="fa fa-paypal"></i> Paypal
+                                    </button>
+                                </form>
+                                <p><strong>Paypal Payment here</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima molestiae odio optio provident quam, quis quisquam rem similique soluta?</p>
+                            </div>
+                            <div class="tab-pane fade" id="nav-tab-bank">
+                                <p>Bank Account Details</p><p>Name of Bank: ANZ</p>
+                                <p>Account Number: 1124235465465</p>
+                                <p>BSB Number: 124235</p>
+                                <p>IBAN Number: 2134gsrgsgrthdfb</p>
+                                <p><strong>Bank Payment Details here</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!--Live Search-->
+            <div class="live-search">
+                <h3 class="heading-tertiary">Searched Results</h3>
+                <div class="row">
+                    <div class="col-md-12 mar-bt5" id="section-livesearch">
+                        <div class="searched-box">
+                            <div class="search-profile-box">
+                                <div class="img-box">
+                                    <img src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="" class="s-profile-img">
+                                </div>
+                            </div>
+                            <div class="profile-details-box d-flex flex-wrap">
+                                <div class="profile-details-box__name d-flex flex-column align-items-center">
+                                    <i class="fa fa-user-circle"></i>
+                                    <span class="heading-style">Bonny Bui</span>
+                                </div>
+                                <div class="profile-details-box__occupation d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="heading-style">Web Developer</span>
+                                </div>
+                                <div class="profile-details-box__location d-flex flex-column align-items-center">
+                                    <i class="fa fa-map"></i>
+                                    <span class="heading-style">Hanoi</span>
+                                </div>
+
+                                <div class="profile-details-box__experience d-flex flex-column align-items-center">
+                                    <i class="fa fa-flask"></i>
+                                    <span class="heading-style">5 Years</span>
+                                </div>
+
+                                <div class="profile-details-box__reviews d-flex flex-column align-items-center">
+                                    <i class="fa fa-star"></i>
+                                    <span class="heading-style"><span class="rating">4.5</span>Reviews</span>
+                                </div>
+
+                                <div class="profile-details-box__viewme d-flex flex-column align-items-center">
+                                    <a href="#" class="">View Me</a>
+                                </div>
+                            </div>
+                        </div> <!--End Search Box-->
+                    </div> <!--End Col-->
+                    <div class="col-md-12 mar-bt5" id="section-livesearch">
+                        <div class="searched-box">
+                            <div class="search-profile-box">
+                                <div class="img-box">
+                                    <img src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="" class="s-profile-img">
+                                </div>
+                            </div>
+                            <div class="profile-details-box d-flex flex-wrap">
+                                <div class="profile-details-box__name d-flex flex-column align-items-center">
+                                    <i class="fa fa-user-circle"></i>
+                                    <span class="heading-style">Bonny Bui</span>
+                                </div>
+                                <div class="profile-details-box__occupation d-flex flex-column align-items-center">
+                                    <i class="fa fa-briefcase"></i>
+                                    <span class="heading-style">Web Developer</span>
+                                </div>
+                                <div class="profile-details-box__location d-flex flex-column align-items-center">
+                                    <i class="fa fa-map"></i>
+                                    <span class="heading-style">Hanoi</span>
+                                </div>
+
+                                <div class="profile-details-box__experience d-flex flex-column align-items-center">
+                                    <i class="fa fa-flask"></i>
+                                    <span class="heading-style">5 Years</span>
+                                </div>
+
+                                <div class="profile-details-box__reviews d-flex flex-column align-items-center">
+                                    <i class="fa fa-star"></i>
+                                    <span class="heading-style"><span class="rating">4.5</span>Reviews</span>
+                                </div>
+
+                                <div class="profile-details-box__viewme d-flex flex-column align-items-center">
+                                    <a href="#" class="">View Me</a>
+                                </div>
+                            </div>
+                        </div> <!--End Search Box-->
+                    </div> <!--End Col-->
+                </div> <!--End Row-->
+            </div>
+
+            <div class="display-msgheader">
+                <p><i class="fa fa-check"></i> Success!!</p>
+            </div>
+            <!--Section for adding the posts to cart-->
+            <div class="heading-tertiary mt-3">Our Unpaid Posts/Ads</div>
+            <section class="section-posts">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="post text-center">
+                            <div class="post__total-images">5</div>
+                            <h2 class="post-heading">Part Time Adminstration Assistant 15 hours per week</h2>
+                            <div id="carouselExampleIndicators" class="carousel slide post__img" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/patrick-tomasso-70305-unsplash.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/paul-carmona-322358-unsplash.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!--End of carousel-->
+
+                            <div class="post__price">
+                                <h1 class="post__price-margin"><sup>Mackay Group</sup></h1>
+                            </div>
+                            <div class="post-description">
+                                <p class="post-description__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aliquid asperiores cum distinctio error fugiat itaque nam
+                                    nobis quibusdam repudiandae, suscipit! Corporis culpa, cupiditate
+                                    et incidunt ipsa possimus rerum? Iste, reprehenderit!
+                                </p>
+                            </div>
+                            <div class="post-icons">
+                                <p class="post-icons__styles"><span>House</span><i class="fa fa-home"></i></p>
+                                <p class="post-icons__styles"><span>3</span><i class="fa fa-bed"></i></p>
+                                <p class="post-icons__styles"><span>2</span><i class="fa fa-shower"></i></p>
+                                <p class="post-icons__styles"><span>1 P</span><i class="fa fa-home"></i></p>
+                            </div>
+                            <div class="post-links">
+                                <a class="post-links__add-to-cart" href="#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
+                                <a class="post-links__checkout" href="#">Checkout <i class="fa fa-shopping-bag"></i></a>
+                            </div>
+
+                            <div class="post-details">
+                                <div class="post-details__date-posted">
+                                    <span><i class="fa fa-calendar post-details__date-icon"></i>2020-12-21</span>
+                                </div>
+                                <div class="post-details__location">
+                                    <span><i class="fa fa-map post-details__map-icon"></i>Brighton, Vic 19966</span>
+                                </div>
+                                <div class="post-details__paid-status">
+                                    <span><i class="fa fa-dollar  post-details__price-icon"></i>0-Unpaid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End of the Ads-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="post text-center">
+                            <div class="post__total-images">3</div>
+                            <h2 class="post-heading">17 Dover Court Brighton, vic 19966</h2>
+                            <div id="carouselExampleIndicators1" class="carousel slide post__img" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/desola-lanre-ologun-709897-unsplash.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/anders-jilden-239-unsplash.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/cristian-lozan-371397-unsplash-300x232.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!--End of carousel-->
+
+                            <div class="post__price">
+                                <h1 class="post__price-margin"><sup>$</sup>650,000</h1>
+                            </div>
+                            <div class="post-description">
+                                <p class="post-description__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aliquid asperiores cum distinctio error fugiat itaque nam
+                                    nobis quibusdam repudiandae, suscipit! Corporis culpa, cupiditate
+                                    et incidunt ipsa possimus rerum? Iste, reprehenderit!
+                                </p>
+                            </div>
+                            <div class="post-icons">
+                                <p class="post-icons__styles"><span>House</span><i class="fa fa-home"></i></p>
+                                <p class="post-icons__styles"><span>3</span><i class="fa fa-bed"></i></p>
+                                <p class="post-icons__styles"><span>2</span><i class="fa fa-shower"></i></p>
+                                <p class="post-icons__styles"><span>1 P</span><i class="fa fa-home"></i></p>
+                            </div>
+                            <div class="post-links">
+                                <a class="post-links__add-to-cart" href="#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
+                                <a class="post-links__checkout" href="#">Checkout <i class="fa fa-shopping-bag"></i></a>
+                            </div>
+
+                            <div class="post-details">
+                                <div class="post-details__date-posted">
+                                    <span><i class="fa fa-calendar post-details__date-icon  "></i>2020-12-21</span>
+                                </div>
+                                <div class="post-details__location">
+                                    <span><i class="fa fa-map post-details__map-icon"></i>Brighton, Vic 19966</span>
+                                </div>
+                                <div class="post-details__paid-status">
+                                    <span><i class="fa fa-dollar  post-details__price-icon"></i>0-Unpaid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End of the Ads-->
+                </div> <!--End of row-->
+            </section> <!--End section posts-->
+
+        </main>
+
+    </div>
+    <footer class="footer">
+        <div class="footer__logob">
+            <img src="img/logo.png" alt="" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer__navigation">
+                    <ul class="footer__elements">
+                        <li class="footer__items">
+                            <a href="" class="footer__item__shine">About</a>
+                        </li>
+                        <li class="footer__items">
+                            <a href="" class="footer__item__shine">Contact Us</a>
+                        </li>
+                        <li class="footer__items">
+                            <a href="" class="footer__item__shine">Our Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer__copyright">
+                    <a href="" class="footer__item__shine">Built by Bonny</a>
+                    <a href="" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-google"></a>
+                    <a href="" class="fa fa-instagram"></a>
+                    <a href="" class="fa fa-linkedin"></a>
+                    <a href="" class="fa fa-pinterest"></a>
+                    <a href="" class="fa fa-youtube"></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+<script>
+    $('#summernote').summernote({
+        placeholder: 'Content Go Here',
+        tabsize: 2,
+        height: 100
+    });
+</script>
+</body>
+</html>

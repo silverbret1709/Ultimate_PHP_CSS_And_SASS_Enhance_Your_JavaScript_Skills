@@ -1,0 +1,134 @@
+.header-profile {
+  height: 12rem;
+  font-size: 1.4rem;
+  background-color: $profile-caption-primary;
+  @include mediaQuery(phone6) {
+    height: 15rem;
+    flex-wrap: wrap;
+  }
+
+  .profile__logo {
+    height: auto;
+    width: 15rem;
+    margin-left: 2rem;
+
+    @include mediaQuery(phone6) {
+      margin-left: 30%;
+    }
+  }
+
+  .nav {
+    @include mediaQuery(phone6) {
+      align-self: flex-end;
+    }
+    & > * {
+      cursor: pointer;
+      height: 100%;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      @include mediaQuery(phone6) {
+        &:not(:last-child) {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    &__box {
+      position: relative;
+      &-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-white;
+
+        &--shopping_cart {
+          fill: $secondary-color-dark;
+        }
+      }
+
+
+
+      &-notif {
+        background-color: $primary-color-dark;
+        font-size: .1rem;
+        border-radius: 50%;
+        padding: .2rem .4rem;
+        width: 2rem;
+        height: 2rem;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -1.8rem;
+        right: -1rem;
+      }
+    }
+    &__user {
+      .user-name {
+        text-decoration: none;
+        color: $color-white;
+      }
+      &-photo {
+        height: 3.7rem;
+        width: 3.7rem;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+      &-name {
+        margin-left: 1rem;
+      }
+
+      &-dropdown {
+        background-color: $color-black;
+        width: 15rem;
+        margin-top: 3rem;
+        margin-right: 7rem;
+      }
+
+      .dropdown-menu {
+        background-color: $color-tertiary-light;
+        animation: slideIn .4s ease-in-out forwards;
+        margin-top: 3.5rem;
+      }
+
+      &-item {
+        list-style: none;
+        font-size: 1.3rem;
+
+        &:hover {
+          background-color: $color-tertiary-dark;
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $color-white;
+        span {
+          margin-left: .5rem;
+        }
+        svg {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+      }
+
+
+    }
+
+    &__online {
+      .u-online {
+        position: absolute;
+        border-radius: 50%;
+        top: 2rem;
+        right: 2rem;
+        height: 1rem;
+        width: 1rem;
+        background-color: $color-green-light;
+        animation: pulse 3s ease-in-out infinite;
+      }
+    }
+  }
+}

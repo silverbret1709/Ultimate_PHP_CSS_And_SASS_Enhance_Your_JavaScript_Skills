@@ -1,0 +1,24 @@
+.heading-tertiary {
+  font-size : 3rem;
+  font-weight : 700;
+  text-transform : uppercase;
+  color: $color-grey-dark;
+  text-align : center;
+  background-image: linear-gradient(to bottom, $color-green-light, $color-green-dark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heading-modal {
+  background-image: linear-gradient(to bottom, #BA265D, #651898);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heading-style {
+  font-size : 1.5rem;
+  text-transform : uppercase;
+  margin-top : .5rem;
+}

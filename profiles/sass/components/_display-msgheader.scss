@@ -1,0 +1,30 @@
+.display-msgheader,
+.display-msgheader-danger
+{
+  position   : absolute;
+  width      : 100%;
+  top        : 0;
+  left       : 0;
+  text-align : center;
+  color      : $color-white;
+  font-size  : 3rem;
+  height     : 8rem;
+  background : linear-gradient(
+                  to right,
+                  #28b485,
+                  #86ecca
+  );
+  padding    : 1rem 2rem;
+  i {
+    padding-right : 1rem;
+    color: $color-tertiary-dark;
+  }
+}
+
+.display-msgheader-danger {
+  background : linear-gradient(
+                  to right,
+                  #eb2f64,
+                  #ff7730
+  );
+}

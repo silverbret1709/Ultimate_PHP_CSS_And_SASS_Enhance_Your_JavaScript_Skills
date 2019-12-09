@@ -1,0 +1,170 @@
+.cart-wrapper {
+  width : 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include mediaQuery(phone6) {
+    flex-direction: column;
+  }
+  .shopping_cart {
+    flex-direction: column;
+    background: $color-white;
+    width : 65%;
+    text-align : left;
+    margin : 0 auto;
+    @include mediaQuery(phone6) {
+      width : 100%;
+    }
+    .shopping_bag {
+      border-top : 1px solid $color-grey-light-2;
+      margin-right : 2rem;
+      margin-bottom : 2rem;
+      float: right;
+      @include mediaQuery(phone6) {
+        width : 100%;
+        margin-bottom : 5rem;
+      }
+      &-img {
+        height : 10rem;
+        width : 10rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &-description {
+        font-size : 1.6rem;
+        line-height : 1.5rem;
+        padding : 1rem 1.5rem;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-content: flex-start;
+        width : 50%;
+
+
+        .title {
+          font-size : 1.7rem;
+          padding-left : 1rem;
+        }
+
+        .red, .price {
+          color: $color-crimson-red;
+          padding-left : 1rem;
+          font-weight : bold;
+          font-size : 1.5rem;
+        }
+
+        .price {
+          color: $color-black;
+        }
+
+
+      }
+      &-remove {
+        margin-top : 1rem;
+        height : 5rem;
+        width : 7rem;
+
+        .quantity {
+          height : 3rem;
+          padding : 1rem;
+          font-size : 1.2rem;
+          color: $color-grey-light-2;
+        }
+
+       /* .quantity-col {
+          background: $color-white;
+        }*/
+
+        .remove {
+          text-decoration : none;
+          font-size : 1.4rem;
+          color: $profile-color-grey-light-4;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            color: $color-black;
+            text-shadow: 0rem 1rem 2rem rgba($color-black, .4);
+
+          }
+        }
+      }
+      &-outside {
+
+        @include mediaQuery(phone6) {
+          display: none;
+        }
+        margin-top : 1rem;
+        font-size : 1.4rem;
+        margin-left : 6rem;
+
+      }
+
+
+    }
+
+  }
+  .checkout_box {
+    width : 33%;
+    margin-top : -3rem;
+
+    @include mediaQuery(phone6) {
+      width : 100%;
+    }
+
+    &__order-summary {
+      margin-top : .7rem;
+      border-bottom : 2px solid $color-black;
+    }
+
+    &__total-price {
+      margin-top : 1.3rem;
+      display: flex;
+      justify-content: space-between;
+      font-size : 1.6rem;
+
+      .subtotal {
+        margin-left : 1rem;
+      }
+
+      .subtotal_price {
+        margin-right : 1rem;
+      }
+    }
+
+    &__button {
+      color: $color-white;
+      margin-left : 2.5rem;
+      margin-top : 1.5rem;
+      background-color: $Amazon;
+      font-size : 1.8rem;
+      width : 80%;
+      padding : 1rem 1.5rem;
+      text-transform : uppercase;
+
+      i {
+        padding-right : .7rem;
+      }
+
+      &:hover {
+        background-color: $color-secondary-dark;
+      }
+    }
+    &-payment-icons {
+      margin-top : 1rem;
+      .checkout__icon {
+        height : 3rem;
+        width : 3rem;
+
+        &:not(:last-child) {
+          margin-right : .5rem;
+        }
+      }
+    }
+  }
+
+}
+
+.shopping_bag_heading {
+  font-size : 2.4rem;
+  padding : 1rem 2rem;
+}

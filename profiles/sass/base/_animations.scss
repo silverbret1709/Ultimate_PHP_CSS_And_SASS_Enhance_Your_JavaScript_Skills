@@ -1,0 +1,23 @@
+@keyframes slideIn {
+   0% {
+     transform: translateY(1rem);
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0rem);
+     opacity: 1;
+   }
+ }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba($color-green-dark, .5);
+  }
+  70% {
+    box-shadow: 0px 0px 0px 0px rgba($color-green-super-dark, .5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 50px rgba($color-green-very-dark, 0);
+  }
+}

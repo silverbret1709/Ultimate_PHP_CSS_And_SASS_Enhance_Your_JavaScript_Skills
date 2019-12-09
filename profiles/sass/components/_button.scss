@@ -1,0 +1,64 @@
+.btn-profile {
+  font-size : 1.6rem;
+  color: $color-white;
+  text-transform : uppercase;
+  width : 95%;
+  margin : 2rem auto;
+  background-image: linear-gradient(
+  to right,
+  $color-primary-violet-extra-light,
+  $color-primary-violet-dark
+  );
+  overflow: hidden;
+  position : relative;
+  cursor : pointer;
+  border: none;
+  border-radius: 3rem;
+
+
+  &__visible {
+    display: inline-block;
+    padding : 2rem 6rem;
+    height : 100%;
+    width : 100%;
+    transition: all .4s;
+}
+
+  &__invisible {
+    display: inline-block;
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    visibility: hidden;
+    left: -100%;
+    top: 25%;
+    transition: all .4s;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+                    to right,
+                    $color-primary-violet-extra-light,
+                    $profile-color-primary-blue
+    );
+    box-shadow: 0rem 1rem 2rem rgba($color-white, .4);
+  }
+  &:hover &__visible {
+    transform: translateX(100%);
+  }
+
+  &:hover &__invisible {
+    visibility: visible;
+    transform: translateX(100%);
+  }
+}
+/*This is btn for modal popup*/
+.popup-submit__btn-modal {
+  text-transform : uppercase;
+  position : absolute;
+  top: 60%;
+  right : 10%;
+  padding : 0.5rem 2rem;
+  font-size : 1.6rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, .4);
+}

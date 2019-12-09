@@ -1,0 +1,71 @@
+.start {
+  &:target {
+    display: block;
+  }
+
+  &:target + .popup-section {
+    display: block;
+  }
+}
+
+.popup-section {
+  display: none;
+  position : fixed;
+  background: rgba(0, 0, 0, .8);
+  top: 0;
+  left: 0;
+  width : 100%;
+  height : 100%;
+  z-index: 1001; //1000 for the side bar
+
+  .popup {
+    background-color: $color-white;
+    width : 64rem;
+    height : auto;
+    @include positionfixed;
+    border-radius: 7px;
+    overflow: hidden;
+
+    @include mediaQuery(tabletPort7) {
+      width : 100%;
+    }
+
+    &-content {
+
+    }
+
+    &-header {
+      padding : 1rem 2rem;
+      margin-bottom : 1rem;
+      &__close {
+        position : absolute;
+        top : 1%;
+        right: 1%;
+        font-size : 4.5rem;
+        color: $color-black;
+        &:hover {
+          color: $profile-color-primary-purple-dark;
+          text-shadow: 0 1rem 2rem rgba($color-black, .4);
+        }
+      }
+
+
+    }
+
+    &-body {
+      background: $profile-color-grey-light-3;
+      .input-style {
+        font-family : $roboto-font;
+        font-size : 1.6rem;
+        padding-left : 1.6rem;
+        height : 5rem;
+      }
+    }
+
+    &-submit {
+      height : 6rem;
+    }
+  }
+
+
+}
