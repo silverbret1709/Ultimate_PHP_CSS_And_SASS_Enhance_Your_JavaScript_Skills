@@ -13,13 +13,13 @@
                 <div class="login__form__group">
                     <input type="email" class="login__form__input" placeholder="Email" id="email" name="email" required>
                     <label for="email" class="login__form__label"><i class="fas fa-paper-plane"></i>Email Address</label>
-                    <div class="email-error"></div>
+                    <div class="login-email-msg login__form__label" style="font-size: 1.5rem; padding-left: 1.8rem;"></div>
                 </div>
 
                 <div class="login__form__group">
                     <input type="password" class="login__form__input" placeholder="Password" id="password" name="password" required>
                     <label for="password" class="login__form__label"><i class="fas fa-unlock-alt"></i>Password</label>
-                    <div class="password-error"></div>
+                    <div class="login-password-msg login__form__label" style="font-size: 1.5rem; padding-left: 1.8rem;"></div>
                 </div>
 
                 <div class="login__form_group progress-bar">

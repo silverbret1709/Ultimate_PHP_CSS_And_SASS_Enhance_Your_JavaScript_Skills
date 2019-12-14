@@ -493,6 +493,9 @@ body {
       @media (max-width: 37.5em) {
         .section-register .register__form .already-member {
           font-size: 1.8rem; } }
+    .section-register .register__form .btn-register {
+      border: 1px solid #5069E9;
+      color: #5069E9; }
   .section-register .register:before {
     background-image: url("../../img/anders-jilden-239-unsplash.jpg");
     background-position: top;
@@ -598,6 +601,10 @@ body {
       @media (max-width: 37.5em) {
         .section-login .login__form .already-member {
           font-size: 1.8rem; } }
+    .section-login .login__form .btn-login {
+      background: #e0d7d7;
+      color: #fff;
+      padding: 1rem; }
   .section-login .login:before {
     background-image: url("../../img/anders-jilden-239-unsplash.jpg");
     background-position: top;
