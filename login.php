@@ -1,11 +1,9 @@
-<?php require_once 'bootstrap.php';
-?>
-<?php include ROOT_PATH . 'inc/head.php';?>
-<?php include ROOT_PATH . 'inc/header.php';?>
+<?php include 'inc/head.php';?>
 <section class="section-login" id="section-login">
     <div class="login">
         <div class="login__form">
             <form action="" method="POST">
+                <?php msg('register_success'); ?>
                 <div class="login__form-heading">
                     Login
                 </div>

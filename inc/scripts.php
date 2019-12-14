@@ -3,5 +3,6 @@
 <script src="vendors/js/bootstrap.min.js"></script>
 <script src="js/menuClick.js"></script>
 <script src="js/scroll.js"></script>
+<script src="js/registerValidation.js"></script>
 </body>
 </html>
