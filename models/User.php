@@ -32,4 +32,32 @@ class User
         $this->db->bind(':user_email', $email);
         return $this->db->single();
     }
+
+    //find user by email
+    public function findUserByEmail($user_email)
+    {
+        $this->db->query('SELECT * FROM users WHERE user_email = :user_email');
+        $this->db->bind(':user_email', $user_email);
+        $row = $this->db->single();
+        if ($this->db->rowCount() > 0) {
+            return $row;
+        } else {
+            return false;
+        }
+    }
+    //User Login
+    public function userLogin($email, $db_password)
+    {
+        $this->db->query('SELECT * FROM users WHERE user_email = :user_email AND user_password = :password');
+        $this->db->bind(':user_email', $email);
+        $this->db->bind(':password', $db_password);
+
+        $row = $this->db->single();
+        if ($this->db->rowCount() > 0) {
+            return $row;
+        } else {
+            return false;
+        }
+
+    }
 }

@@ -4,5 +4,6 @@
 <script src="js/menuClick.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/registerValidation.js"></script>
+<script src="js/loginValidation.js"></script>
 </body>
 </html>

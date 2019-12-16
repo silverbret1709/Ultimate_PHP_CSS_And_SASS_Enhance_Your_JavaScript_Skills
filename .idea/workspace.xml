@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b7d1d7-0e87-49ab-9905-4d9a047b80e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/loginValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/login-user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/loginValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/loginValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_register.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,10 @@
       <workItem from="1575994172822" duration="2473000" />
       <workItem from="1576034166612" duration="1407000" />
       <workItem from="1576284049198" duration="4762000" />
-      <workItem from="1576307532583" duration="9043000" />
+      <workItem from="1576307532583" duration="9718000" />
+      <workItem from="1576345204590" duration="2280000" />
+      <workItem from="1576417239096" duration="5274000" />
+      <workItem from="1576433083266" duration="1865000" />
     </task>
     <servers />
   </component>
@@ -199,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="690" y="397" key="NewPhpClassDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1576285949144" />
-    <state x="795" y="518" key="NewPhpFileDialog" timestamp="1576310729938">
+    <state x="795" y="518" key="NewPhpFileDialog" timestamp="1576417667317">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="795" y="518" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1576310729938" />
+    <state x="795" y="518" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1576417667317" />
     <state x="461" y="241" key="SettingsEditor" timestamp="1575225161732">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -215,9 +219,9 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="616" y="280" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1575995774207" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1576311044412">
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1576418562067">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1576311044412" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1576418562067" />
   </component>
 </project>
