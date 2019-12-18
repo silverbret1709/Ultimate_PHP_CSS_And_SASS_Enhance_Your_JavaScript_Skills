@@ -22,15 +22,34 @@ $(document)
                     $.ajax({
                         type: 'POST',
                         url: 'php/login-user.php',
-                        dataType: 'json',
+                        dataType: 'JSON',
                         data: {'login-email': email, 'login-password': password},
                         success: function (data) {
                             if (data.msgcode === 'success') {
-                                console.log('Both Password and Email are oke. We need to redirect User');
-                            } else  if (data.msgcode === 'no_password') {
-                                console.log('Password Unknown ' + data.msgcode);
-                            } else  if (data.msgcode === 'no_email') {
-                                console.log('Email Unknown ' + data.msgcode);
+                                // console.log('Both Password and Email are oke. We need to redirect User');
+                                $('.progress')
+                                    .removeClass('d-none');
+                                var elem = document.getElementById('my-pbar');
+                                var width = 1;
+                                var id = setInterval(frame, 10);
+
+                                function frame() {
+                                    if (width >= 100) {
+                                        clearInterval(id);
+                                    } else {
+                                        width++;
+                                        elem.style.width = width + '%';
+                                    }
+                                }
+
+                                setTimeout(function () {
+                                    location = data.msg;
+                                });
+
+                            } else if (data['msgcode'] == 'no_password') {
+                                console.log('Password Unknown ' + data['msgcode']);
+                            } else if (data['msgcode'] == 'no_email') {
+                                console.log('Email Unknown ' + data['msgcode']);
                             }
                         }
                     });
@@ -38,3 +57,4 @@ $(document)
                 }
             });
     });
+

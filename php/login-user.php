@@ -1,4 +1,5 @@
 <?php
+
 require_once '../config/config.php';
 require_once '../lib/Database.php';
 require_once '../helpers/session_helper.php';
@@ -10,7 +11,6 @@ function login() {
     $form_password = $_POST['login-password'];
 
     $exists = $user->findUserByEmail($user_email);
-    print_r($exists);
     if ($exists) {
         $db_role = $exists->user_role;
         $db_password  = $exists->user_password;

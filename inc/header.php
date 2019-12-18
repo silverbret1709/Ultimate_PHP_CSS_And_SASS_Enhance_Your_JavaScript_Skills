@@ -41,7 +41,12 @@
                     <a href="post.html">Post Free</a>
                 </li>
                 <li>
+                    <?php if (isset($_SESSION['user_id'])) :?>
+                        <a href="logout.php">Logout</a>
+                    <?php else : ?>
                     <a href="login.php">Login</a>
+
+                    <?php endif; ?>
                 </li>
             </ul>
         </nav>

@@ -21,7 +21,12 @@
                     <label for="password" class="login__form__label"><i class="fas fa-unlock-alt"></i>Password</label>
                     <div class="login-password-msg login__form__label" style="font-size: 1.5rem; padding-left: 1.8rem;"></div>
                 </div>
+                <div class="progress d-none">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated " id="my-pbar" role="progressbar" aria-valuenow="75"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 
+                    </div>
+                </div>
                 <div class="login__form_group progress-bar">
 
                 </div>
