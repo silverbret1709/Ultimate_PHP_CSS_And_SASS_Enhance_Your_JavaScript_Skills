@@ -9,5 +9,6 @@ define('DB_NAME', 'bonny');
 
 //
 define('BASE_URL', '/UDEMY/');
-define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . 'PHP/EBOOKS&COURSES/COURSES' . BASE_URL);
+//define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT']);
+define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/PHP/EBOOKS_COURSES/COURSES' .BASE_URL);
 define('SITENAME', 'Bonny');

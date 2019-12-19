@@ -42,7 +42,7 @@
                 </li>
                 <li>
                     <?php if (isset($_SESSION['user_id'])) :?>
-                        <a href="logout.php">Logout</a>
+                        <a href="<?php echo BASE_URL;?>/php/logout.php">Logout</a>
                     <?php else : ?>
                     <a href="login.php">Login</a>
 

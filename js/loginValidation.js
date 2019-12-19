@@ -29,6 +29,7 @@ $(document)
                                 // console.log('Both Password and Email are oke. We need to redirect User');
                                 $('.progress')
                                     .removeClass('d-none');
+                                $('.error-msg').hide();
                                 var elem = document.getElementById('my-pbar');
                                 var width = 1;
                                 var id = setInterval(frame, 10);
@@ -47,9 +48,10 @@ $(document)
                                 });
 
                             } else if (data['msgcode'] == 'no_password') {
-                                console.log('Password Unknown ' + data['msgcode']);
+                                // console.log('Password Unknown ' + data['msgcode']);
+                                $('.error-msg').html("<div class='unsuccessful'><i class='fas fa-lock'></i> Wrong Password</div>");
                             } else if (data['msgcode'] == 'no_email') {
-                                console.log('Email Unknown ' + data['msgcode']);
+                                $('.error-msg').html("<div class='unsuccessful'><i class='fas fa-at'></i> Wrong Email</div>");
                             }
                         }
                     });

@@ -1,4 +1,5 @@
-<?php require_once 'bootstrap.php'; ?>
+<?php require_once 'bootstrap.php';
+?>
 <!-- Head -->
 <?php require 'inc/head.php';?>
 <!--Header-->

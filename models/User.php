@@ -60,4 +60,28 @@ class User
         }
 
     }
+
+    //GEt user details for profile page
+    public function getUserById($user_id)
+    {
+        $this->db->query("SELECT * FROM users WHERE user_id = :user_id");
+        $this->db->bind(':user_id', $user_id);
+        $row = $this->db->single();
+
+        return $row;
+    }
+    
+    //Update Image
+    public function updateImage($data)
+    {
+        $this->db->query('UPDATE users SET user_image = :user_image WHERE user_id = :user_id');
+        $this->db->bind(':user_image', $data['user_image']);
+        $this->db->bind(':user_id', $data['user_id']);
+
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
